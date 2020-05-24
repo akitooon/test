@@ -1,0 +1,16 @@
+$primary_color: #2f2f2f;
+$subtext_color: #4f4f4f;
+$accent_color: #ba9973;
+$sub_color: #ba7394;
+$placeholder_color: #9f9f9f;
+$line_color: #ccc;
+$attention_color: #d05a5a;
+$error_color: #ec5252;
+
+$pc_font_size: 20px;
+$sp_font_size: 16px;
+
+@mixin normalSentenseStyle() {
+    line-height: 1.7;
+    letter-spacing: .04em;
+}

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>KiiTE - 審査制子育てコミュニティサービス</title>
+        <meta name="description" content="事前審査制の匿名SNSコミュニティKiiTE(キイテ)は、夫婦の働き方やキャリア観、教育方針、子どもの性別や年齢など、あなたと同じ境遇の仲間に匿名で悩みを相談できるサービスです。">
+        <meta property="og:title" content="KiiTE - 審査制子育てコミュニティサービス">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="事前審査制の匿名SNSコミュニティKiiTE(キイテ)は、夫婦の働き方やキャリア観、教育方針、子どもの性別や年齢など、あなたと同じ境遇の仲間に匿名で悩みを相談できるサービスです。">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="KiiTE - 審査制子育てコミュニティサービス">
+        <meta property="og:image" content="./img/ogp.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+        <script type="text/javascript" src="./js/base.js"></script>
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/form.css">
+
+    </head>
+    <body>
+        <div class="fix-cv-btn js-FixCvBtn">
+            <a href="#form">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="./img/cv_btn_sp.svg">
+                    <img srcset="./img/fix_cv_btn_pc.svg" alt="登録無料・事前登録限定のお得な招待を受け取る">
+                </picture>
+            </a>
+        </div>
+        <!-- ▼メインビジュアル -->
+        <section class="mv-section-wrap">
+            <div class="mv-wrap">
+                <p class="main-copy">「あなたの育児」を</p>
+                <p class="main-copy">理解してくれる人と出会える</p>
+                <h1>
+                    <img src="./img/logo.svg" alt="KiiTE">
+                </h1>
+            </div>
+            <picture class="mv-bg-wrap">
+                <source media="(max-width: 480px)" srcset="./img/KiiTE_mv_sp.jpg">
+                <img srcset="./img/KiiTE_mv_pc.jpg" alt="">
+            </picture>
+            <p class="sub-copy">遠慮や不安なく相談でき､<br>本当に欲しい言葉を得られる<br>機会を作ります｡</p>
+            <div class="cv-btn-wrap">
+                <picture class="cv-btn-note">
+                    <source media="(max-width: 1024px)" srcset="./img/cv_btn_note_sp.svg">
+                    <img srcset="./img/cv_btn_note_pc.svg" alt="2020/10/01まで">
+                </picture>
+                <a href="#form" class="cv-btn js-FvCvBtn">
+                    <picture>
+                        <source media="(max-width: 1024px)" srcset="./img/cv_btn_sp.svg">
+                        <img srcset="./img/cv_btn_pc.svg" alt="登録無料・事前登録限定のお得な招待を受け取る">
+                    </picture>
+                </a>
+            </div>
+        </section>
+        <!-- ▲メインビジュアル -->
+        <div class="tosho-proof-wrap">
+            <p>本サービスは東証一部上場の株式会社リブセンスがご提供するサービスです｡</p>
+            <img src="./img/jpx.svg" alt="東証一部上場">
+        </div>
+        <!-- ▼コンテンツ -->
+        <section class="about-kiite-wrap">
+            <h2>
+                <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/about/about_kiite_sp.svg">
+                    <img srcset="./img/about/about_kiite_pc.svg" alt="KiiTE(キーテ)とは？">
+                </picture>
+            </h2>
+            <p class="about-description">あなたが本当に相談したい人に出会える､<br class="pc">子育てママ･パパ限定の審査制匿名サービスです。</p>
+            <ul class="about-lst">
+                <li>
+                    <img src="./img/about/about_1.png" alt="「境遇」が自分と近い人を探して、匿名で相談できます">
+                    <div class="about-txt-wrap">
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/about/about_1_ttl_sp.svg">
+                                <img srcset="./img/about/about_1_ttl_pc.svg" alt="「境遇」が自分と近い人を探して、匿名で相談できます">
+                            </picture>
+                        </h3>
+                        <p>｢居住エリア｣｢世帯年収｣｢親が近くにいるか｣｢キャリア観｣などから､あなたに近い｢境遇｣のママ･パパを探せます｡</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/about/about_2.png" alt="クローズドな掲示板で質問でき､より踏み込んだ話は個別チャットで相談できます">
+                    <div class="about-txt-wrap">
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/about/about_2_ttl_sp.svg">
+                                <img srcset="./img/about/about_2_ttl_pc.svg" alt="クローズドな掲示板で質問でき､より踏み込んだ話は個別チャットで相談できます">
+                            </picture>
+                        </h3>
+                        <p>絞り込んだママ･パパに対して､あなた専用のクローズドな掲示板が作成可能｡1:1で相談したい人が出来たら､個別チャットでやり取り出来ます｡</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/about/about_3.png" alt="気になるコミュニティがあれば､匿名で参加して情報交換できます">
+                    <div class="about-txt-wrap">
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/about/about_3_ttl_sp.svg">
+                                <img srcset="./img/about/about_3_ttl_pc.svg" alt="気になるコミュニティがあれば､匿名で参加して情報交換できます">
+                            </picture>
+                        </h3>
+                        <p>話すテーマごとに、承認制コミュニティも存在。興味のあるテーマコミュニティに参加することで、かゆいところに手の届く情報・意見交換が出来ます。</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/about/about_4.png" alt="誰かの相談にのることもでき､条件に応じて｢サンクスポイント｣を獲得できます">
+                    <div class="about-txt-wrap">
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/about/about_4_ttl_sp.svg">
+                                <img srcset="./img/about/about_4_ttl_pc.svg" alt="誰かの相談にのることもでき､条件に応じて｢サンクスポイント｣を獲得できます">
+                            </picture>
+                        </h3>
+                        <p>悩みを解決した際などに付与されるサンクスポイントは､アマゾンギフト券等に交換可能｡育児を通して得たあなたの経験･知識を使って､誰かの悩みを解決してみませんか?</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="worry-ask-wrap">
+            <h2>
+                <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/worry_ttl_sp.svg">
+                    <img srcset="./img/worry_ttl_pc.svg" alt="育児をしていて､こんなお悩みはありませんか？">
+                </picture>
+            </h2>
+            <picture>
+                <source media="(max-width: 480px)" srcset="./img/worry_comment_sp.svg">
+                <img srcset="./img/worry_comment_pc.svg" alt="価値観や置かれた状況が違う・遠慮や気後れで相談しづらい・炎上や身バレも怖い">
+            </picture>
+        </section>
+        <section class="solution-wrap">
+            <h2>
+                <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/solution/solution_ttl_sp.svg">
+                    <img srcset="./img/solution/solution_ttl_pc.svg" alt="KiiTEは､そんな悩みを解決します!">
+                </picture>
+            </h2>
+            <ul class="solution-lst">
+                <li class="column-item">
+                    <div class="img-wrap">
+                        <img src="./img/solution/solution_1_1.png" alt="｢境遇｣を理解してくれる人を見つけ､踏み込んで相談できます">
+                        <img src="./img/solution/solution_1_2.png" alt="｢境遇｣を理解してくれる人を見つけ､踏み込んで相談できます">
+                    </div>
+                    <div>
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/solution/solution_1_ttl_sp.svg">
+                                <img srcset="./img/solution/solution_1_ttl_pc.svg" alt="｢境遇｣を理解してくれる人を見つけ､踏み込んで相談できます">
+                            </picture>
+                        </h3>
+                        <p>居住エリア､お子様の年齢･性別､キャリア観などの多彩な｢境遇｣軸を用いて､｢同じ立場｣あるいは｢先輩｣などに絞り込んで相談相手を探せます。匿名なので、遠慮せずに聞きたいことが聞けます。</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/solution/solution_2.png" alt="身バレを防ぎながら利用できます">
+                    <div>
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/solution/solution_2_ttl_sp.svg">
+                                <img srcset="./img/solution/solution_2_ttl_pc.svg" alt="身バレを防ぎながら利用できます">
+                            </picture>
+                        </h3>
+                        <p>サービスは匿名で利用でき､通園名･通学校名などを用いて公開範囲を制限出来ます｡相談内容の閲覧も､あなたが指定した人のみに制限できます｡</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/solution/solution_3.png" alt="本人確認が取れた方のみが利用できる事前承認制のため､安心して利用できます">
+                    <div>
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/solution/solution_3_ttl_sp.svg">
+                                <img srcset="./img/solution/solution_3_ttl_pc.svg" alt="本人確認が取れた方のみが利用できる事前承認制のため､安心して利用できます">
+                            </picture>
+                        </h3>
+                        <p>運転免許証などを利用して本人確認を実施します｡個人情報は､東証一部上場の運営会社により適切に管理いたします｡</p>
+                    </div>
+                </li>
+            </ul>
+            <p class="solution-summary">
+                <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/solution/solution_summary_sp.svg">
+                    <img srcset="./img/solution/solution_summary_pc.svg" alt="KiiTEは､あなたの境遇を理解した相手に､不安･疑問･悩みをしっかりと相談できる機会を提供します｡">
+                </picture>
+            </p>
+        </section>
+        <section class="adviser-recruit-wrap">
+            <h2>
+                <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/adviser/adviser_sec_ttl_sp.svg">
+                    <img srcset="./img/adviser/adviser_sec_ttl_pc.svg" alt="回答者としてのご利用者も募集しています">
+                </picture>
+            </h2>
+            <p>育児を通して得たあなたの経験･知識で､誰かの悩みを解決していただけませんか?</p>
+            <ul class="adviser-recruit-lst">
+                <li>
+                    <img src="./img/about/about_1.png" alt="まさに｢あなたに話をきいてみたい｣人からの相談を受けとれます">
+                    <div>
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/adviser/adviser_1_ttl_sp.svg">
+                                <img srcset="./img/adviser/adviser_1_ttl_pc.svg" alt="まさに｢あなたに話をきいてみたい｣人からの相談を受けとれます">
+                            </picture>
+                        </h3>
+                        <p>あなたの｢境遇｣に共感・興味を抱いた方から質問が届きます｡なので､あなたが実際に得た情報や経験そのものが､そのまま相手の役に立つかも知れません｡</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/adviser/adviser_2.png" alt="コミュニティ運営者になれば､条件に応じて｢サンクスポイント｣を獲得できます">
+                    <div>
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/adviser/adviser_2_ttl_sp.svg">
+                                <img srcset="./img/adviser/adviser_2_ttl_pc.svg" alt="コミュニティ運営者になれば､条件に応じて｢サンクスポイント｣を獲得できます">
+                            </picture>
+                        </h3>
+                        <p>コミュニティ内でうまれた｢感謝の気持ち｣を運営が変換し､サンクスポイントとして付与致します｡サンクスポイントはアマゾンギフト券などに交換可能です｡</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/adviser/adviser_3.png" alt="ギフト券などに変換可能なサンクスポイントを贈呈します">
+                    <div>
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/adviser/adviser_3_ttl_sp.svg">
+                                <img srcset="./img/adviser/adviser_3_ttl_pc.svg" alt="ギフト券などに変換可能なサンクスポイントを贈呈します">
+                            </picture>
+                        </h3>
+                        <p>役に立ったと感じる情報を提供された場合やコミュニティを運営していただいた場合などには、ギフト券などに交換できる｢サンクスポイント｣を贈呈いたします｡ </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- ▲コンテンツ -->
+        <!-- ▼ご利用までの流れ -->
+        <section class="flow-wrap">
+            <h2>
+                <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/flow/flow_sec_ttl_sp.svg">
+                    <img srcset="./img/flow/flow_sec_ttl_pc.svg" alt="ご利用までの流れ">
+                </picture>
+            </h2>
+            <ul class="flow-lst">
+                <li>
+                    <div class="flow-detail">
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/flow/flow_1_ttl_sp.svg">
+                                <img srcset="./img/flow/flow_1_ttl_pc.svg" alt="事前登録">
+                            </picture>
+                        </h3>
+                        <img src="./img/flow/flow_motif_form.svg" alt="登録フォーム">
+                        <p>下記の事前登録フォームより､必要事項をご記入の上､お申し込み下さい｡<br>(事前登録は無料です)</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="flow-detail">
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/flow/flow_2_ttl_sp.svg">
+                                <img srcset="./img/flow/flow_2_ttl_pc.svg" alt="サービス開始(本登録)のご案内">
+                            </picture>
+                        </h3>
+                        <img src="./img/flow/flow_motif_mail.svg" alt="メールが届く">
+                        <p>サービス開始時､ご登録いただいたメールアドレス宛に本登録のご案内メールをお送りいたします｡(2020年XX月中予定)</p>
+                    </div>
+                    <div class="about-price-wrap">
+                        <h4>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/flow/about_pre_register_ttl_sp.svg">
+                                <img srcset="./img/flow/about_pre_register_ttl_pc.svg" alt="事前登録いただいた場合">
+                            </picture>
+                        </h4>
+                        <p>通常、本登録後から980円/月の料金が発生いたしますが、<span class="txt-accent">特別料金300円/月</span>でご案内いたします。<br>(本登録を完了するまでは、料金は発生致しません。)</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="flow-detail">
+                        <h3>
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="./img/flow/flow_3_ttl_sp.svg">
+                                <img srcset="./img/flow/flow_3_ttl_pc.svg" alt="本登録して利用開始">
+                            </picture>
+                        </h3>
+                        <img src="./img/flow/flow_motif_form.svg" alt="登録フォーム">
+                        <p>ご案内メールから本登録していただくと、サービスの利用開始となります。最長6ヶ月、特別料金でサービスをご利用いただけます。<br>※解約はいつでも可能です。(お支払は1ヶ月単位)</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- ▲ご利用までの流れ -->
+        <!-- ▼応募フォーム -->
+        <section class="form-wrap js-FormWrap" id="form">
+            <h2>
+                <picture>
+                    <source media="(max-width: 1024px)" srcset="./img/form/form_ttl_sp.svg">
+                    <img srcset="./img/form/form_ttl_pc.svg" alt="事前登録フォーム">
+                </picture>
+            </h2>
+            <iframe name="to_submit_iframe" id="to_submit_iframe" style="display:none;" onload="if(submitted) {window.location=currentURL + 'thanks.html';}"></iframe>
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeShM79MJLtOCYflj4K6PJMECAbR3zXny9hRvfcCuh3zbQTcg/formResponse" method="POST" target="to_submit_iframe" onsubmit="submitted=true;">
+                <p class="form-first-note">● 個人情報の取扱いについて<br>ご入力いただいた個人情報および回答内容は、本サービスの事前登録に関連する諸連絡、アンケートや当社の運営する各サービスのご案内、ダイレクトメールの発送の他、個人を特定しない統計的情報として利用させていただきます。<br>また、お客さまの個人情報をご本人の同意なしに業務委託先以外の第三者に開示・提供することはございません(法令等により開示を求められた場合を除く)。<br>その他、個人情報の取り扱いについては、下記ページをご確認ください。<br><a class="link" target="_blank" href="https://">個人情報の取扱について</a></p>
+                <p class="form-attention"><span class="required">*</span>必須</p>
+                <div class="form-item">
+                    <label for="email" class="required">メールアドレス</label>
+                    <input type="text" id="email" name="emailAddress" required placeholder="メールアドレス">
+                </div>
+                <div class="form-item">
+                    <label for="username" class="required">あなたのご氏名をご記入ください</label>
+                    <input type="text" id="username" name="entry.2111267076" required placeholder="回答を入力">
+                </div>
+                <div class="form-item">
+                    <label for="gender" class="required">あなたの性別を教えてください</label>
+                    <div class="answer-items">
+                        <label>
+                            <input type="radio" id="gender" name="entry.1341503487" required value="女性">
+                            <span>女性</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="gender" name="entry.1341503487" required value="男性">
+                            <span>男性</span>
+                        </label>
+                        <label><input type="radio" id="gender" name="entry.1341503487" required value="無回答">
+                            <span>無回答</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="age" class="required">あなたの年齢を教えてください(数字のみ記入)</label>
+                    <input type="text" id="age" name="entry.2123437968" required placeholder="回答を入力">
+                </div>
+                <div class="form-item">
+                    <label for="prefname" class="required">あなたがお住いの都道府県を教えてください</label>
+                    <div class="select-wrap">
+                        <select name="entry.2002528311" id="prefname" required>
+                            <option value="北海道">北海道</option>
+                            <option value="青森県">青森県</option>
+                            <option value="岩手県">岩手県</option>
+                            <option value="宮城県">宮城県</option>
+                            <option value="秋田県">秋田県</option>
+                            <option value="山形県">山形県</option>
+                            <option value="福島県">福島県</option>
+                            <option value="茨城県">茨城県</option>
+                            <option value="栃木県">栃木県</option>
+                            <option value="群馬県">群馬県</option>
+                            <option value="埼玉県">埼玉県</option>
+                            <option value="千葉県">千葉県</option>
+                            <option value="東京都">東京都</option>
+                            <option value="神奈川県">神奈川県</option>
+                            <option value="新潟県">新潟県</option>
+                            <option value="富山県">富山県</option>
+                            <option value="石川県">石川県</option>
+                            <option value="福井県">福井県</option>
+                            <option value="山梨県">山梨県</option>
+                            <option value="長野県">長野県</option>
+                            <option value="岐阜県">岐阜県</option>
+                            <option value="静岡県">静岡県</option>
+                            <option value="愛知県">愛知県</option>
+                            <option value="三重県">三重県</option>
+                            <option value="滋賀県">滋賀県</option>
+                            <option value="京都府">京都府</option>
+                            <option value="大阪府">大阪府</option>
+                            <option value="兵庫県">兵庫県</option>
+                            <option value="奈良県">奈良県</option>
+                            <option value="和歌山県">和歌山県</option>
+                            <option value="鳥取県">鳥取県</option>
+                            <option value="島根県">島根県</option>
+                            <option value="岡山県">岡山県</option>
+                            <option value="広島県">広島県</option>
+                            <option value="山口県">山口県</option>
+                            <option value="徳島県">徳島県</option>
+                            <option value="香川県">香川県</option>
+                            <option value="愛媛県">愛媛県</option>
+                            <option value="高知県">高知県</option>
+                            <option value="福岡県">福岡県</option>
+                            <option value="佐賀県">佐賀県</option>
+                            <option value="長崎県">長崎県</option>
+                            <option value="熊本県">熊本県</option>
+                            <option value="大分県">大分県</option>
+                            <option value="宮崎県">宮崎県</option>
+                            <option value="鹿児島県">鹿児島県</option>
+                            <option value="沖縄県">沖縄県</option>
+                            <option value="海外在住">海外在住</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="cityname" class="required">あなたがお住まいの市区町村を教えてください</label>
+                    <input type="text" id="cityname" name="entry.1428197005" required placeholder="回答を入力">
+                </div>
+                <div class="form-item">
+                    <label for="job" required class="required">あなたのご職業を教えてください</label>
+                    <div class="answer-items">
+                        <label>
+                            <input type="radio" id="job" name="entry.767346915" required value="会社員">
+                            <span>会社員</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="job" name="entry.767346915" required value="公務員">
+                            <span>公務員</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="job" name="entry.767346915" required value="自営業">
+                            <span>自営業</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="job" name="entry.767346915" required value="専業主婦（夫）">
+                            <span>専業主婦（夫）</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="job" name="entry.767346915" required value="会社役員">
+                            <span>会社役員</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="job" name="entry.767346915" required value="学生">
+                            <span>学生</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="job" name="entry.767346915" required value="パート・派遣・アルバイト">
+                            <span>パート・派遣・アルバイト</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="job" name="entry.767346915" required value="無職">
+                            <span>無職</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="workstyle" class="required">あなたの就労状況を教えてください</label>
+                    <div class="answer-items">
+                        <label>
+                            <input type="radio" id="marriagestyle" name="entry.1060467852" required value="週5日～それ以上、フルタイム勤務している">
+                            <span>週5日～それ以上、フルタイム勤務している</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="marriagestyle" name="entry.1060467852" required value="週5日～それ以上、時短勤務している">
+                            <span>週5日～それ以上、時短勤務している</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="marriagestyle" name="entry.1060467852" required value="週3日程度、フルタイム勤務している">
+                            <span>週3日程度、フルタイム勤務している</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="marriagestyle" name="entry.1060467852" required value="週3日程度、時短勤務している">
+                            <span>週3日程度、時短勤務している</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="marriagestyle" name="entry.1060467852" required value="週1日程度、フルタイム勤務している">
+                            <span>週1日程度、フルタイム勤務している</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="marriagestyle" name="entry.1060467852" required value="週1日程度、時短勤務している">
+                            <span>週1日程度、時短勤務している</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="marriagestyle" name="entry.1060467852" required value="週1日未満、または働いていない">
+                            <span>週1日未満、または働いていない</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="marriagestyle" class="required">あなたの婚姻状況を教えてください</label>
+                    <div class="answer-items">
+                        <label>
+                            <input type="radio" id="marriagestyle" name="entry.395970664" required value="既婚（子供あり）">
+                            <span>既婚（子供あり）</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="marriagestyle" name="entry.395970664" required value="既婚（子供なし）">
+                            <span>既婚（子供なし）</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="marriagestyle" name="entry.395970664" required value="シングルマザー・シングルファザー">
+                            <span>シングルマザー・シングルファザー</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="marriagestyle" name="entry.395970664" required value="未婚">
+                            <span>未婚</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="child" class="required">お子様の人数を教えて下さい</label>
+                    <label for="boy" required class="inner-label">男の子</label>
+                    <div class="answer-items">
+                        <label class="inline-item">
+                            <input type="radio" id="boy" name="entry.1424447545" required value="0人">
+                            <span>0人</span>
+                        </label>
+                        <label class="inline-item">
+                            <input type="radio" id="boy" name="entry.1424447545" required value="1人">
+                            <span>1人</span>
+                        </label>
+                        <label class="inline-item">
+                            <input type="radio" id="boy" name="entry.1424447545" required value="2人">
+                            <span>2人</span>
+                        </label>
+                        <label class="inline-item">
+                            <input type="radio" id="boy" name="entry.1424447545" required value="3人">
+                            <span>3人</span>
+                        </label>
+                        <label class="inline-item">
+                            <input type="radio" id="boy" name="entry.1424447545" required value="4人">
+                            <span>4人</span>
+                        </label>
+                        <label class="inline-item">
+                            <input type="radio" id="boy" name="entry.1424447545" required value="5人以上">
+                            <span>5人以上</span>
+                        </label>
+                    </div>
+                    <label for="girl" required class="inner-label">女の子</label>
+                    <div class="answer-items">
+                        <label class="inline-item">
+                            <input type="radio" id="girl" name="entry.733299371" required value="0人">
+                            <span>0人</span>
+                        </label>
+                        <label class="inline-item">
+                            <input type="radio" id="girl" name="entry.733299371" required value="1人">
+                            <span>1人</span>
+                        </label>
+                        <label class="inline-item">
+                            <input type="radio" id="girl" name="entry.733299371" required value="2人">
+                            <span>2人</span>
+                        </label>
+                        <label class="inline-item">
+                            <input type="radio" id="girl" name="entry.733299371" required value="3人">
+                            <span>3人</span>
+                        </label>
+                        <label class="inline-item">
+                            <input type="radio" id="girl" name="entry.733299371" required value="4人">
+                            <span>4人</span>
+                        </label>
+                        <label class="inline-item">
+                            <input type="radio" id="girl" name="entry.733299371" required value="5人以上">
+                            <span>5人以上</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="oldestage" class="required">一番上のお子様の年齢を教えてください(数字のみ記入)</label>
+                    <p class="form-subtxt">〇〇ヶ月以下は切り捨てで、数字のみご記入下さい。(例:　0歳5ヶ月→"0",　 5歳11ヶ月→"5")</p>
+                    <input type="text" id="oldestage" name="entry.1266773287" required placeholder="回答を入力">
+                </div>
+                <div class="form-item">
+                    <label for="youngestage" class="required">一番下のお子様の年齢を教えてください(数字のみ記入)</label>
+                    <p class="form-subtxt">〇〇ヶ月以下は切り捨てで、数字のみご記入下さい。(例:　0歳5ヶ月→"0",　 5歳11ヶ月→"5")。お子さんがお一人の場合は、上記設問と同じ年齢をご入力下さい。</p>
+                    <input type="text" id="youngestage" name="entry.1674795384" required placeholder="回答を入力">
+                </div>
+                <div class="form-item">
+                    <label for="consult" class="required">次のうち､本サービスで相談したいことにすべてチェックを付けてください</label>
+                    <div class="answer-items">
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="塾選び">
+                            <span>塾選び</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="自分のキャリア">
+                            <span>自分のキャリア</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="配偶者の家事や子育てへの協力">
+                            <span>配偶者の家事や子育てへの協力</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="PTA">
+                            <span>PTA</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="発達障害の心配">
+                            <span>発達障害の心配</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="不倫">
+                            <span>不倫</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="習い事や学童選び">
+                            <span>習い事や学童選び</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="学校選び">
+                            <span>学校選び</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="不妊治療">
+                            <span>不妊治療</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="高齢出産">
+                            <span>高齢出産</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="育児ノイローゼ">
+                            <span>育児ノイローゼ</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="しつけや教育方針">
+                            <span>しつけや教育方針</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="セックスレス">
+                            <span>セックスレス</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="consult" name="entry.1577058504" required value="その他">
+                            <span>その他</span>
+                        </label>
+                        <div class="inner-textbox">
+                            <input type="text" id="consult" name="entry.1577058504.other_option_response" placeholder="回答を入力">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="interview" class="required">本サービスに関し、より良いサービスづくりのために､オンラインでのインタビュー(60~90分程度)にご協力いただくことはできますか？</label>
+                    <p class="form-subtxt">｢はい｣にチェックいただいた方には､別途ご登録いただいたメールアドレス宛にご案内を差し上げることがございます｡ご協力いたいた方には、5,000円の謝礼をお渡しいたします｡</p>
+                    <div class="answer-items">
+                        <label>
+                            <input type="radio" id="interview" name="entry.1452740838" required value="はい">
+                            <span>はい</span>
+                        </label>
+                        <label><input type="radio" id="interview" name="entry.1452740838" required value="いいえ">
+                            <span>いいえ</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="agreement" class="required">個人情報の取扱いについて同意します</label>
+                    <p class="form-subtxt">ご入力いただいた個人情報および回答内容は、本サービスの事前登録に関連する諸連絡、アンケートや当社の運営する各サービスのご案内、ダイレクトメールの発送の他、個人を特定しない統計的情報として利用させていただきます。また、お客さまの個人情報をご本人の同意なしに業務委託先以外の第三者に開示・提供することはございません(法令等により開示を求められた場合を除く)。その他、個人情報の取り扱いについては、下記ページをご確認ください。<br><a class="link" target="_blank" href="https://">個人情報の取扱について</a></p>
+                    <div class="answer-items">
+                        <label>
+                            <input type="checkbox" id="agreement" name="entry.1877548993" required value="はい">
+                            <span>はい</span>
+                        </label>
+                    </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="request" required class="required">次のうち､ぜひ欲しいと思う機能を全てお選び下さい</label>
+                    <div class="answer-items">
+                        <label><input type="checkbox" id="request1" name="entry.1569575784" required value="「境遇」を使って、相談相手を検索して選ぶことが出来る機能(境遇とは、お子様の年齢、居住エリア、教育方針、夫や両親の協力具合など)">
+                            <span>「境遇」を使って、相談相手を検索して選ぶことが出来る機能(境遇とは、お子様の年齢、居住エリア、教育方針、夫や両親の協力具合など)</span>
+                        </label>
+                        <label><input type="checkbox" id="request2" name="entry.1569575784" required value="自分が選んだ相談相手以外には、相談相談内容や投稿が見られないように出来る機能">
+                            <span>自分が選んだ相談相手以外には、相談相談内容や投稿が見られないように出来る機能</span>
+                        </label>
+                        <label><input type="checkbox" id="request3" name="entry.1569575784" required value="身分証明書(運転免許書など)を使って、運営会社による本人確認ができた人のみが利用できる機能">
+                            <span>身分証明書(運転免許書など)を使って、運営会社による本人確認ができた人のみが利用できる機能</span>
+                        </label>
+                        <label><input type="checkbox" id="request4" name="entry.1569575784" required value="ご自身が質問や相談に応じた際に、溜まったらギフトカードに交換できるポイントを得られる機能">
+                            <span>ご自身が質問や相談に応じた際に、溜まったらギフトカードに交換できるポイントを得られる機能</span>
+                        </label>
+                        <label><input type="checkbox" id="request5" name="entry.1569575784" required value="話したいテーマごとに集まって、情報収集・交換が出来るコミュニティ機能">
+                            <span>話したいテーマごとに集まって、情報収集・交換が出来るコミュニティ機能</span>
+                        </label>
+                        <label><input type="checkbox" id="request6" name="entry.1569575784" required value="通園名や通学校名を登録すると、同じ幼稚園・学校に通っている人から検索されないように出来る機能">
+                            <span>通園名や通学校名を登録すると、同じ幼稚園・学校に通っている人から検索されないように出来る機能</span>
+                        </label>
+                        <label><input type="checkbox" id="request7" name="entry.1569575784" required value="その他">
+                            <span>その他</span>
+                        </label>
+                        <div class="inner-textbox">
+                            <input type="text" id="request" name="entry.1569575784.other_option_response" placeholder="回答を入力">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="expectation" class="required">本サービスに期待されることを教えて下さい</label>
+                    <textarea id="expectation" name="entry.2128873515" required placeholder="回答を入力"></textarea>
+                </div>
+                <div class="submit-btn">
+                    <input type="image" src="./img/form/form_btn_text.svg" value="上記の内容で送信する" alt="上記の内容で送信する">
+                </div>
+            </form>
+            <div class="after-form-note">
+                <p>費用発生は､別途ご案内するお知らせから本登録完了した時点からとなります。<br class="pc">事前登録のみで発生することはありません｡</p>
+                <p>サービス内容､及び料金に関しては変更されることがございます｡予めご了承下さい｡<br class="pc">(変更があった際は､本登録のご案内時点でお知らせいたします｡)</p>
+            </div>
+        </section>
+        <!-- ▲応募フォーム -->
+        <!-- ▼フッター -->
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://www.livesense.co.jp/" target="_blank">運営会社</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">個人情報の取り扱い</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">サイトポリシー</a>
+                </li>
+            </ul>
+            <p class="copyright">Copyright © Livesense Inc. All rights reserved.</p>
+        </footer>
+        <!-- ▲フッター -->
+    </body>
+</html>
